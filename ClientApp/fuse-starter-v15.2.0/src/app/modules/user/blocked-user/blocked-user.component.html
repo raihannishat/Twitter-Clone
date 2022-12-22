@@ -16,6 +16,8 @@
                            <div class="grid gap-4 grid-cols-2" fxLayout="column"
                               class="flex mb-4 ql-align-center gap-8">
                               <div class="flex-row flex" style="width: 50%" (click)="onRedirectToProfile(user.id)">
+                                 <img *ngIf="user?.image" src="{{user?.image}}" alt="default img"
+                                    class="h-10 w-10 rounded-full mr-4" />
                                  <ngx-avatar *ngIf="!user.image" [name]="user?.name" matTooltip="{{ user?.name }}"
                                     matTooltipPosition="below" size="42" matTooltipPosition="below" initialsSize="2"
                                     class="border-radius-8 mr-4">
