@@ -74,7 +74,7 @@ export class AuthSignUpComponent implements OnInit {
         this.showAlert = false;
 
         // Sign up
-        debugger
+        
         this._authService.signUp(this.signUpForm.value)
             .subscribe(
                 (response) => {
